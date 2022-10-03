@@ -66,4 +66,64 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+/* 料理 */
+#dining_header{
+  width: 100%;
+  background-image: url(../assets/images/dining_header_bg_pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dining01{
+  margin-bottom: 5em;
+}
+
+#dining01 img{
+  width: 32.5%;
+  margin: 0;
+}
+
+.dining_p{
+  text-align: center;
+  margin: 0;
+}
+
+.rice{
+  overflow: hidden;
+  zoom: 1;
+  margin: 0 auto 3em;
+}
+
+.rice_txt01,
+.rice_txt02,
+.rice_txt03,
+.rice_txt04,
+.rice_txt05{
+  width: 35%;
+  margin: 0 3% 0 10%;
+  float: left;
+}
+
+.rice h3{
+  margin: 0 auto;
+}
+
+.rice p{
+  font-size: 1.15em;
+  margin: 1em auto 0;
+}
+
+.rice_img{
+  width: 41%;
+  float: right;
+}
+
+.rice img{
+  margin: 0 10% 2em 0;
+}
+}
 </style>

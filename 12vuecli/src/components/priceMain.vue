@@ -137,4 +137,78 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+  /* 料金 */
+#price_header{
+  width: 100%;
+  background-image: url(../assets/images/price_header_bg_pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#price01{
+  margin-top: 5em;
+}
+
+#price01 p,
+#price02 p{
+  font-size: 1.1em;
+}
+
+#price01 img{
+  width: 49%;
+  margin: 3em 0 0;
+}
+
+#price02 p{
+  margin-bottom: 3em;
+}
+
+.price_p{
+  font-size: 1.1em;
+  text-align: center;
+}
+
+table{
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  table-layout: fixed;
+  margin: auto;
+  text-align: center;
+}
+
+#price01 table{
+  width: 70%;
+  min-width: 750px;
+}
+
+#price02 table{
+  width: 400px;
+}
+
+table th{
+  background-color: #808080;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 0.3em 0;
+}
+
+table td{
+  font-size: 1.3em;
+  border: 1px solid #000000;
+  padding: 0.3em 0;
+}
+
+.td_p{
+  font-size: 1em;
+}
+
+#price03{
+  text-align: center;
+  margin: 3em 0;
+}
+}
 </style>

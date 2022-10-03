@@ -13,4 +13,17 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+/* お問い合わせ */
+#contact{
+  text-align: center;
+}
+
+.contact_tel{
+  margin-bottom: 4em;
+}
+}
 </style>

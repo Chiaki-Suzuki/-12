@@ -175,4 +175,75 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+/* 料金シミュレーション */
+.simulation h2::before {
+  content: '';
+  display: block;
+  height: 50px;
+  background: url("../assets/images/simu_title.jpg") 50% 50% / contain no-repeat;
+  margin: 0 auto 10px;
+}
+
+.simu_text {
+  text-align: center;
+  margin: -50px 0 50px;
+}
+
+.simulation table {
+  margin: 0 auto 40px;
+}
+
+.simulation table th {
+  width: 25%;
+}
+
+.simulation table td {
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.simulation table td label {
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+.simulation table td label.disa {
+  color: #aaa;
+  cursor: initial;
+}
+.simulation table td label:first-of-type {
+  margin: 0;
+}
+
+.simulation input[type="date"],
+.simulation select {
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+.simulation .sum_box {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 20px !important;
+  border-bottom: 1px solid;
+}
+
+.simulation .sum_box span {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 5px 0 10px;
+  color: #da4040;
+}
+
+.pc_off {
+  display: none;
+}
+}
 </style>

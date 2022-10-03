@@ -35,4 +35,65 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+/* ご宿泊 */
+#room_header{
+  width: 100%;
+  background-image: url(../assets/images/room_header_bg_pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#room01,
+#room02{
+  overflow: hidden;
+  zoom: 1;
+}
+
+#room01 img{
+  width: 100%;
+}
+
+.roomA{
+  width: 40%;
+  margin: 0 2% 0 8%;
+  float: left;
+}
+
+.roomB{
+  width: 40%;
+  margin: 0 8% 0 2%;
+  float: right;
+}
+
+.roomA p,
+.roomB p{
+  margin: 0 auto 2em;
+  text-align: center;
+}
+
+.amenities{
+  width: 40%;
+  margin: 0 2% 0 8%;
+  float: left;
+}
+
+.water{
+  width: 40%;
+  margin: 0 8% 5em 2%;
+  float: right;
+}
+
+#room02 img{
+  width: 100%;
+  margin: 5em auto 0;
+}
+
+#room02 h3{
+  text-align: center;
+}
+}
 </style>

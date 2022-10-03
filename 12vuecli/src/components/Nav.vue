@@ -36,4 +36,66 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+/* ナビ */
+nav{
+  margin-top: 0;
+  background-image: url(../assets/images/nav_bg_pc.png);
+  background-repeat: repeat;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+nav ul{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0;
+  padding: 0.5em 1.4% 0;
+}
+
+nav li:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+
+.nav00{
+  width: 27%;
+  margin-right: 14%;
+}
+
+.nav22{
+  width: 5.3%;
+}
+
+.nav33{
+  width: 7.5%;
+}
+
+.nav66{
+  width: 14.5%;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav img{
+  width: 100%;
+}
+
+#selected{
+  border-bottom: solid 2px rgba(255,255,255,0.6);
+}
+}
 </style>

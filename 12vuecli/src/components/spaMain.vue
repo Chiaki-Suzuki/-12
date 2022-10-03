@@ -45,4 +45,87 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+/* 温泉 */
+#spa_header{
+  width: 100%;
+  background-image: url(../assets/images/spa_header_bg_pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#spa02,
+#spa03{
+  overflow: hidden;
+  zoom: 1;
+}
+
+#spa02{
+  margin: 0 auto;
+}
+
+.spa_img01{
+  display: block;
+  float: left;
+  margin: 0 0 0 5%;
+  width: 40%;
+}
+
+#spa02 dl{
+  overflow: hidden;
+  zoom: 1;
+}
+
+#spa02 dl{
+  font-size: 1.2em;
+  width:47%;
+  margin: 0 5% 2em 3%;
+  float: right;
+}
+
+#spa02 dt{
+  float: left;
+}
+
+#spa02 p{
+  font-size: 1.2em;
+  width:47%;
+  margin: 0 5% 0 3%;
+  float: right;
+}
+
+.spa_img02{
+  width: 32.5%;
+  margin: 6em 0 0;
+  padding: 0;
+}
+
+#spa03{
+  margin: 5em auto 4em;
+}
+
+.spa03_txt{
+  width:57%;
+  margin: 0 2% 0 5%;
+  float: left;
+}
+
+#spa03 h3{
+  margin: 0 auto 1em;
+}
+
+#spa03 p{
+  font-size: 1.1em;
+}
+
+#spa03>img{
+  display: block;
+  width:30%;
+  margin: 0 6% 0 0;
+  float: right;
+}
+}
 </style>

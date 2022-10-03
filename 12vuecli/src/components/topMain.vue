@@ -36,4 +36,45 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+/* トップページ */
+.bg-slider{
+	width: 100%;
+  background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+}
+
+#index_header h1{
+  height: 18em;
+}
+
+main{
+  width: 100%;
+}
+
+.index_img01{
+  width: 68%;
+  margin: 0;
+  padding: 0;
+}
+
+.index_img02{
+  width: 32.5%;
+  margin: 7em 0 0;
+}
+
+#index02{
+  margin: 5em 0 0;
+}
+
+#index02 img{
+  display: block;
+  width: 50%;
+  margin: 5em auto 6em;
+}
+}
 </style>

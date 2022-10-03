@@ -28,4 +28,56 @@ export default {
 </script>
 
 <style>
+/*-------------------------
+  pc
+-------------------------*/
+@media screen and (min-width:768px){
+/* 交通アクセス */
+#access_header{
+  width: 100%;
+  background-image: url(../assets/images/access_header_bg_pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#access01,
+#access02{
+  overflow: hidden;
+  zoom: 1;
+  margin: 4em auto;
+}
+
+#access01 h3,
+#access02 h3,
+#access02 h4,
+#access01 p,
+#access02 p{
+  width: 47%;
+  margin: 0 3% 0 10%;
+  float: left;
+}
+
+#access01 p,
+#access02 p{
+  font-size: 1.15em;
+}
+
+#access01 img{
+  width: 30%;
+  margin: -2em 10% 0 0;
+  float: right;
+}
+
+#access02 img{
+  width: 30%;
+  margin: -10.5em 10% 0 0;
+  float: right;
+}
+
+#g_map{
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+}
 </style>
