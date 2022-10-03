@@ -10,6 +10,11 @@ module.exports = {
       template: 'public/index.html', // テンプレートのHTML
       filename: 'index.html', // build時に出力されるファイル名
     },
+    spa: {
+      entry: 'src/pages/spa/main.js',
+      template: 'public/spa.html',
+      filename: 'spa.html',
+    },
     price: {
       entry: 'src/pages/price/main.js',
       template: 'public/price.html',

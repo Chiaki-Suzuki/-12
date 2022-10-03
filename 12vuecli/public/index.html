@@ -7,9 +7,27 @@
         <link rel="icon" href="<%= BASE_URL %>favicon.ico">
         <title><%= htmlWebpackPlugin.options.title %></title>
         <link rel="stylesheet" type="text/css" href="./css/drawer.css">
+        <link rel="stylesheet" type="text/css" href="./css/flexslider.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
         <script src="./js/drawer.min.js"></script>
+        <script src="./js/jquery.flexslider.js"></script>
+        <script type="text/javascript" src="./js/jquery.bgswitcher.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            if ($(window).width() >= 767) {
+            jQuery(function($) {
+                $('.bg-slider').bgSwitcher({
+                images: ['./images/index_header_bg01.jpg','./images/index_header_bg02.jpg','./images/index_header_bg03.jpg','./images/index_header_bg04.jpg'],
+                interval: 6000,// 切り替えの間隔を指定
+                effect: "fade",// エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+                duration: 2000,// エフェクトの時間
+                easing: "linear"// エフェクトのイージング
+                });
+            });
+            }
+        });
+        </script>
         <script>
             $(document).ready(function () {
                 if ($(window).width() <= 767) {
@@ -17,6 +35,15 @@
                         $(".drawer").drawer();
                     });
                 }
+            });
+        </script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function() {
+              if ($(window).width() <= 767) {
+                  $(window).load(function() {
+                  $('.flexslider').flexslider();
+                  });
+              }
             });
         </script>
         <script>
