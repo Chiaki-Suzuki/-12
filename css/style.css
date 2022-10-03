@@ -554,6 +554,11 @@ table td{
 
 .simulation table td label {
   margin: 0 0 0 10px;
+  cursor: pointer;
+}
+.simulation table td label.disa {
+  color: #aaa;
+  cursor: initial;
 }
 .simulation table td label:first-of-type {
   margin: 0;

@@ -174,62 +174,69 @@ $(function() {
       </table>
       <p class="price_p sp">※１　大人料金&#040;中学生以上&#041;は、入湯税40円、消費税込みの料金です。<br>※２　子供料金&#040;小学生&#041;は、入湯税は頂いておりません。消費税込みの料金です。<br>※３　アメマスダービーにご参加されている方限定のプランもございます。<br>※４　宿泊されるお客様に限り、２４時間ご入浴いただけます。<br>※５　その他料金もございますので、お気軽にお電話にてお問い合わせ下さいませ。</p>
       <!-- ご宿泊料金シミュレーション -->
-      <div class="simulation">
-        <h2>ご宿泊料金シミュレーション</h2>
-        <p class="simu_text">ご希望の条件を選択してください。</p>
-        <table>
-            <tr>
-                <th>ご宿泊日</th>
-                <td>
-                    <input type="date">
-                </td>
-            </tr>
-            <tr>
-                <th>人数</th>
-                <td>
-                    大人：<select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                    </select> 人　<br class="pc_off">
-                    子ども：<select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                    </select> 人
-                </td>
-            </tr>
-            <tr>
-                <th>ご宿泊形態</th>
-                <td>
-                    <label><input type="radio" name="type">１泊２食付</label>
-                    <label><input type="radio" name="type">１泊夕食付</label><br class="pc_off">
-                    <label><input type="radio" name="type">１泊朝食付</label>
-                    <label><input type="radio" name="type">１泊素泊まり</label>
-                </td>
-            </tr>
-            <tr>
-                <th>オプション</th>
-                <td>
-                    <label for="option"><input type="checkbox" id="option"> アメマスパック</label>
-                </td>
-            </tr>
-        </table>
-        <p class="sum_box">合計<span>10,000</span>円</p>
+      <div id="app">
+          <div class="simulation">
+            <h2>ご宿泊料金シミュレーション</h2>
+            <p class="simu_text">ご希望の条件を選択してください。</p>
+            <table>
+                <tr>
+                    <th>ご宿泊日</th>
+                    <td>
+                        <input type="date"
+                        :min="minDate"
+                        v-model="date"
+                        @change="selectTerms">
+                    </td>
+                </tr>
+                <tr>
+                    <th>人数</th>
+                    <td>
+                        大人：<select v-model="adult" @change="selectTerms">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select> 人　<br class="pc_off">
+                        子ども：<select v-model="child" @change="selectTerms">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select> 人
+                    </td>
+                </tr>
+                <tr>
+                    <th>ご宿泊形態</th>
+                    <td>
+                        <label><input type="radio" name="type" value="0" v-model="type" @change="selectTerms">１泊２食付</label>
+                        <label><input type="radio" name="type" value="1" v-model="type" @change="selectTerms">１泊夕食付</label><br class="pc_off">
+                        <label><input type="radio" name="type" value="2" v-model="type" @change="selectTerms">１泊朝食付</label>
+                        <label><input type="radio" name="type" value="3" v-model="type" @change="selectTerms">１泊素泊まり</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>オプション</th>
+                    <td>
+                        <label for="option" :class="{disa: disabled}"><input type="checkbox" id="option" v-model="option" @change="selectTerms" :disabled="disabled"> アメマスパック</label>
+                    </td>
+                </tr>
+            </table>
+            <p class="sum_box">合計<span>{{ total | number_format }}</span>円</p>
+          </div>
       </div>
       <!-- ご宿泊料金シミュレーション ここまで -->
       <img src="./images/price_img01.jpg" alt="宮内温泉の写真">
@@ -280,4 +287,6 @@ $(function() {
     </div>
   </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/main.js"></script>
 </html>
