@@ -15,10 +15,25 @@ module.exports = {
       template: 'public/spa.html',
       filename: 'spa.html',
     },
+    room: {
+      entry: 'src/pages/room/main.js',
+      template: 'public/room.html',
+      filename: 'room.html',
+    },
+    dining: {
+      entry: 'src/pages/dining/main.js',
+      template: 'public/dining.html',
+      filename: 'dining.html',
+    },
     price: {
       entry: 'src/pages/price/main.js',
       template: 'public/price.html',
       filename: 'price.html',
     },
+    access: {
+      entry: 'src/pages/access/main.js',
+      template: 'public/access.html',
+      filename: 'access.html',
+    }
   },
 };
