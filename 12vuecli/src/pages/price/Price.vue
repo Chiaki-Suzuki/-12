@@ -4,21 +4,21 @@
       :id="id"
       :title="title">
     </contentHeader>
-    <Contact></Contact>
+    <Main></Main>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
 import contentHeader from '../../components/contentHeader.vue'
-import Contact from '../../components/Contact.vue'
+import Main from '../../components/priceMain.vue'
 import Footer from '../../components/Footer.vue'
 
 export default {
-  name: 'App',
+  name: 'Price',
   components: {
     contentHeader,
-    Contact,
+    Main,
     Footer,
   },
   data: ()=> {
