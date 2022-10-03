@@ -4,24 +4,27 @@
       :id="id"
       :title="title">
     </contentHeader>
+    <Main></Main>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
 import contentHeader from '../../components/contentHeader.vue'
+import Main from '../../components/roomMain.vue'
 import Footer from '../../components/Footer.vue'
 
 export default {
-  name: 'App',
+  name: 'Room',
   components: {
     contentHeader,
+    Main,
     Footer,
   },
   data: ()=> {
     return {
-      id: 'spa_header',
-      title: '温泉'
+      id: 'room_header',
+      title: 'ご宿泊'
     }
   }
 }

@@ -4,18 +4,21 @@
       :id="id"
       :title="title">
     </contentHeader>
+    <Main></Main>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
 import contentHeader from '../../components/contentHeader.vue'
+import Main from '../../components/spaMain.vue'
 import Footer from '../../components/Footer.vue'
 
 export default {
-  name: 'App',
+  name: 'Spa',
   components: {
     contentHeader,
+    Main,
     Footer,
   },
   data: ()=> {
