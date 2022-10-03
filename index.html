@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>宮内温泉旅館</title>
+<meta name="description" content="北海道島牧、宮内温泉旅館のホームページです。日帰り入浴も承っております。温泉水で育てた美味しい自家米をご用意しております。">
+<meta name="keyword" content="宮内温泉,島牧">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/sp.css">
+<link rel="stylesheet" type="text/css" href="./css/drawer.css">
+<link rel="stylesheet" type="text/css" href="./css/flexslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+<script src="./js/drawer.min.js"></script>
+<script src="./js/jquery.flexslider.js"></script>
+<!--[if lt IE 9]>
+<script src="./js/html5shiv.min.js"></script>
+<script src="./js/respond.js"></script>
+<script type="text/javascript" src="./js/jquery.backgroundSize"></script>
+<script type="text/javascript">
+$(function() {
+  $(".bg-slider").css({backgroundSize: "cover"});
+});
+</script>
+<![endif]-->
+<script>
+  $(function(){
+    var topBtn=$('#pageTop');
+    topBtn.hide();
+    $(window).scroll(function(){
+      if($(this).scrollTop()>80){
+        topBtn.fadeIn();
+      }else{
+        topBtn.fadeOut();
+      }
+    });
+    topBtn.click(function(){
+      $('body,html').animate({
+      scrollTop: 0},1000);
+      return false;
+    });
+  });
+</script>
+<script type="text/javascript" src="./js/jquery.bgswitcher.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if ($(window).width() >= 767) {
+      jQuery(function($) {
+        $('.bg-slider').bgSwitcher({
+          images: ['./images/index_header_bg01.jpg','./images/index_header_bg02.jpg','./images/index_header_bg03.jpg','./images/index_header_bg04.jpg'],
+          interval: 6000,// 切り替えの間隔を指定
+          effect: "fade",// エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+          duration: 2000,// エフェクトの時間
+          easing: "linear"// エフェクトのイージング
+        });
+      });
+    }
+  });
+</script>
+<script>
+  $(document).ready(function() {
+    if ($(window).width() <= 767) {
+    	$(document).ready(function() {
+    	  $(".drawer").drawer();
+    	});
+    }
+  });
+</script>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    if ($(window).width() <= 767) {
+    	$(window).load(function() {
+    	$('.flexslider').flexslider();
+    	});
+    }
+  });
+</script>
+</head>
+<body>
+  <header id="index_header">
+    <nav class="pc">
+      <ul>
+        <li class="nav00"><a href="index.html"><img src="./images/nav00.png" alt="ナビ画像"></a></li>
+        <li class="nav22"><a href="spa.html"><img src="./images/nav_pc01.png" alt="ナビ画像"></a></li>
+        <li class="nav33"><a href="room.html"><img src="./images/nav_pc02.png" alt="ナビ画像"></a></li>
+        <li class="nav22"><a href="dining.html"><img src="./images/nav_pc03.png" alt="ナビ画像"></a></li>
+        <li class="nav22"><a href="price.html"><img src="./images/nav_pc04.png" alt="ナビ画像"></a></li>
+        <li class="nav66"><a href="access.html"><img src="./images/nav_pc05.png" alt="ナビ画像"></a></li>
+      </ul>
+    </nav>
+    <div class="drawer drawer--right sp">
+			<button type="button" class="drawer-toggle drawer-hamburger">
+				<span class="sr-only">toggle navigation</span>
+				<span class="drawer-hamburger-icon"></span>
+			</button>
+      <nav class="drawer-nav">
+        <ul class="drawer-menu">
+          <li><a href="index.html">宮内温泉旅館</a></li>
+          <li><a href="spa.html">温泉</a></li>
+          <li><a href="room.html">ご宿泊</a></li>
+          <li><a href="dining.html">料理</a></li>
+          <li><a href="price.html">料金</a></li>
+          <li><a href="access.html">交通アクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bg-slider">
+      <div class="h1center">
+        <h1>大自然・島牧に佇む<br>　　　　古き良き一軒宿</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="index01">
+      <p class="p01">北海道南西部、日本海に面した島牧村。<br>静かな山の中、泊川のほとりに佇む一軒宿が<br>宮内&#040;ぐうない&#041;温泉旅館です。</p>
+      <div class="flexslider sp">
+        <ul class="slides">
+          <li><img src="./images/index_img01.jpg" alt="泊川" class="index_img01"></li>
+          <li><img src="./images/index_img02.jpg" alt="大平山" class="index_img02"></li>
+          <li><img src="./images/index_img03.jpg" alt="茂津多岬灯台" class="index_img02"></li>
+          <li><img src="./images/index_img04.jpg" alt="元町神社" class="index_img02"></li>
+        </ul>
+      </div>
+      <img src="./images/index_img01.jpg" alt="泊川" class="index_img01 pc">
+      <img src="./images/index_img02.jpg" alt="大平山" class="index_img02 pc">
+      <img src="./images/index_img03.jpg" alt="茂津多岬灯台" class="index_img02 pc">
+      <img src="./images/index_img04.jpg" alt="元町神社" class="index_img02 pc">
+    </section>
+    <section id="index02">
+      <p class="p01">大自然に囲まれた癒しの空間で<br>ごゆっくりお過ごしください。</p>
+      <img src="./images/index_img05.jpg" alt="宮内温泉旅館の外観">
+    </section>
+    <section id="contact">
+      <h2>ご予約・お問い合わせ</h2>
+      <p>ご予約・お問い合わせはお電話で承ります。</p>
+      <p class="contact_tel">ＴＥＬ：０１３６&#045;７５&#045;６３２０</p>
+    </section>
+    <div id="pageTop"><a href="#"><img src="./images/pagetop.png" alt="トップへ戻るボタン" class="pagetop"></a></div>
+  </main>
+  <div class="sns_btn">
+    <img src="./images/fb_btn.png" alt="facebookボタン" class="fb_btn">
+    <img src="./images/insta_btn.png" alt="instaglamボタン" class="insta_btn">
+  </div>
+  <footer>
+    <div class="footer">
+      <img src="./images/footer_img.png" alt="温泉マーク">
+      <p class="footer_gu">宮内温泉旅館</p>
+      <p class="footer_yu">&#12306;048&#045;0621</p>
+      <p class="footer_add">北海道島牧郡島牧村字泊431</p>
+      <p class="footer_tel">TEL:0136-75-6320</p>
+      <p class="footer_sm"><small>Copyright 2017 宮内温泉旅館</small></p>
+    </div>
+  </footer>
+</body>
+</html>

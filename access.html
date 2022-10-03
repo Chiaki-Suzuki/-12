@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>交通アクセス 宮内温泉旅館</title>
+<meta name="description" content="北海道島牧、宮内温泉旅館のホームページです。日帰り入浴も承っております。温泉水で育てた美味しい自家米をご用意しております。">
+<meta name="keyword" content="宮内温泉,島牧">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/sp.css">
+<link rel="stylesheet" type="text/css" href="./css/drawer.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+<script src="./js/drawer.min.js"></script>
+<!--[if lt IE 9]>
+<script src="./js/html5shiv.min.js"></script>
+<script src="./js/respond.js"></script>
+<script type="text/javascript" src="./js/jquery.backgroundSize"></script>
+<script type="text/javascript">
+$(function() {
+  $("header").css({backgroundSize: "cover"});
+});
+</script>
+<![endif]-->
+<script>
+  $(document).ready(function() {
+    if ($(window).width() <= 767) {
+    	$(document).ready(function() {
+    	  $(".drawer").drawer();
+    	});
+    }
+  });
+</script>
+<script>
+  $(function(){
+    var topBtn=$('#pageTop');
+    topBtn.hide();
+    $(window).scroll(function(){
+      if($(this).scrollTop()>80){
+        topBtn.fadeIn();
+      }else{
+        topBtn.fadeOut();
+      }
+    });
+    topBtn.click(function(){
+      $('body,html').animate({
+      scrollTop: 0},1000);
+      return false;
+    });
+  });
+</script>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyAMd266PkzA22EfBggi01CKvKcc6_XlsNA"></script>
+<script type="text/javascript">
+function googleMap() {
+var latlng = new google.maps.LatLng(42.675093, 140.085469);
+/* この数字の所にさっきGoogleMapで調べた住所の座標を入れる！ */
+
+var myOptions = {
+zoom: 15, /*拡大比率。0～17で数字が大きいほど拡大！0にすると世界地図になっちゃうよ*/
+center: latlng,/*地図の中心を指定*/
+mapTypeControlOptions: { mapTypeIds: ['style', google.maps.MapTypeId.ROADMAP] }
+};
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+/*'map'の部分は地図を表示させたいdivのid名を入れよう*/
+
+/*アイコン設定*/
+var icon = new google.maps.MarkerImage('./images/location6.png',/*アイコンのURL*/
+//new google.maps.Size(31,47),/*アイコンサイズ*/
+//new google.maps.Point(42.675093,140.085469)/*アイコンの位置*/
+);
+var markerOptions = {
+position: latlng,
+map: map,
+icon: icon,
+title: '宮内温泉旅館',/*タイトル*/
+
+animation: google.maps.Animation.BOUNCE
+/*ずっとぴょんぴょんしているBOUNCEか、最初にボトッと落ちてくるDROP。
+動かなくていい場合はこの1行は不要*/
+
+};
+var marker = new google.maps.Marker(markerOptions);
+var styleOptions = [
+/*★★ここに後でカスタマイズするデザインの内容が入ります★★*/
+];
+var styledMapOptions = { name: '宮内温泉旅館' }/*地図の上に表示されるタイトル*/
+var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
+map.mapTypes.set('style', sampleType);
+map.setMapTypeId('style');
+};
+google.maps.event.addDomListener(window, 'load', function() {
+googleMap();
+});
+</script>
+</head>
+<body onload="initialize();">
+  <header id="access_header">
+		<nav class="pc">
+      <ul>
+        <li class="nav00"><a href="index.html"><img src="./images/nav00.png" alt="ナビ画像"></a></li>
+        <li class="nav22"><a href="spa.html"><img src="./images/nav_pc01.png" alt="ナビ画像"></a></li>
+        <li class="nav33"><a href="room.html"><img src="./images/nav_pc02.png" alt="ナビ画像"></a></li>
+        <li class="nav22"><a href="dining.html"><img src="./images/nav_pc03.png" alt="ナビ画像"></a></li>
+        <li class="nav22"><a href="price.html"><img src="./images/nav_pc04.png" alt="ナビ画像"></a></li>
+        <li class="nav66"><a href="access.html"><img src="./images/nav_pc05.png" alt="ナビ画像" id="selected"></a></li>
+      </ul>
+    </nav>
+    <div class="drawer drawer--right sp">
+			<button type="button" class="drawer-toggle drawer-hamburger">
+				<span class="sr-only">toggle navigation</span>
+				<span class="drawer-hamburger-icon"></span>
+			</button>
+      <nav class="drawer-nav">
+        <ul class="drawer-menu">
+          <li><a href="index.html">宮内温泉旅館</a></li>
+          <li><a href="spa.html">温泉</a></li>
+          <li><a href="room.html">ご宿泊</a></li>
+          <li><a href="dining.html">料理</a></li>
+          <li><a href="price.html">料金</a></li>
+          <li id="selected"><a href="access.html">交通アクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="h1center">
+      <h1>　交通アクセス</h1>
+    </div>
+  </header>
+  <main>
+    <section id="access01">
+      <h3>お車でお越しの場合</h3>
+      <p>道央道黒松内ＪＣＴから黒松内新道、<br> 道道２６５号・９号、<br>国道２２９号、<br>道道８３６号線へ&#040;島牧美利河線&#041;<br>６５ｋｍ</p>
+      <img src="./images/access_img01.jpg" alt="道の駅">
+    </section>
+    <section id="access02">
+      <h3>電車、バスでお越しの場合</h3>
+      <h4>電車&#040;ＪＲ&#041;</h4>
+      <p>札幌駅から特急で長万部駅で下車。<br>普通列車に乗り換え、黒松内駅で下車。<br>約３時間３０分</p>
+      <h4>バス</h4>
+      <p>黒松内駅前から寿都行き「ニセコバス」に乗車。<br>寿都から栄浜行き又は、原歌行きのバスに乗り換え。 <br>島牧村役場で下車。<br>※無料送迎を行っております。事前にご連絡いただきましたら、島牧村役場前までお迎えに参ります。</p>
+      <img src="./images/access_img02.jpg" alt="黒松内駅">
+    </section>
+
+    <div id="map" style="width: 100%; height: 300px;">
+    <!--このdiv内に地図を表示させる。サイズなどはcssで調整してね-->
+    </div>
+    <div id="pageTop"><a href="#"><img src="./images/pagetop.png" alt="トップへ戻るボタン" class="pagetop"></a></div>
+  </main>
+  <div class="sns_btn">
+    <img src="./images/fb_btn.png" alt="facebookボタン" class="fb_btn">
+    <img src="./images/insta_btn.png" alt="instaglamボタン" class="insta_btn">
+  </div>
+  <footer>
+    <div class="footer">
+      <img src="./images/footer_img.png" alt="温泉マーク">
+      <p class="footer_gu">宮内温泉旅館</p>
+      <p class="footer_yu">&#12306;048-0621</p>
+      <p class="footer_add">北海道島牧郡島牧村字泊431</p>
+      <p class="footer_tel">TEL:0136-75-6320</p>
+      <p class="footer_sm"><small>Copyright 2017 宮内温泉旅館</small></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ご宿泊 宮内温泉旅館</title>
+<meta name="description" content="北海道島牧、宮内温泉旅館のホームページです。日帰り入浴も承っております。温泉水で育てた美味しい自家米をご用意しております。">
+<meta name="keyword" content="宮内温泉,島牧">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/sp.css">
+<link rel="stylesheet" type="text/css" href="./css/drawer.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+<script src="./js/drawer.min.js"></script>
+<!--[if lt IE 9]>
+<script src="./js/html5shiv.min.js"></script>
+<script src="./js/respond.js"></script>
+<script type="text/javascript" src="./js/jquery.backgroundSize"></script>
+<script type="text/javascript">
+$(function() {
+  $("header").css({backgroundSize: "cover"});
+});
+</script>
+<![endif]-->
+<script>
+  $(document).ready(function() {
+    if ($(window).width() <= 767) {
+    	$(document).ready(function() {
+    	  $(".drawer").drawer();
+    	});
+    }
+  });
+</script>
+<script>
+  $(function(){
+    var topBtn=$('#pageTop');
+    topBtn.hide();
+    $(window).scroll(function(){
+      if($(this).scrollTop()>80){
+        topBtn.fadeIn();
+      }else{
+        topBtn.fadeOut();
+      }
+    });
+    topBtn.click(function(){
+      $('body,html').animate({
+      scrollTop: 0},1000);
+      return false;
+    });
+  });
+</script>
+</head>
+<body>
+  <header id="room_header">
+    <nav class="pc">
+      <ul>
+        <li class="nav00"><a href="index.html"><img src="./images/nav00.png" alt="ナビ画像"></a></li>
+        <li class="nav22"><a href="spa.html"><img src="./images/nav_pc01.png" alt="ナビ画像"></a></li>
+        <li class="nav33"><a href="room.html"><img src="./images/nav_pc02.png" alt="ナビ画像" id="selected"></a></li>
+        <li class="nav22"><a href="dining.html"><img src="./images/nav_pc03.png" alt="ナビ画像"></a></li>
+        <li class="nav22"><a href="price.html"><img src="./images/nav_pc04.png" alt="ナビ画像"></a></li>
+        <li class="nav66"><a href="access.html"><img src="./images/nav_pc05.png" alt="ナビ画像"></a></li>
+      </ul>
+    </nav>
+    <div class="drawer drawer--right sp">
+			<button type="button" class="drawer-toggle drawer-hamburger">
+				<span class="sr-only">toggle navigation</span>
+				<span class="drawer-hamburger-icon"></span>
+			</button>
+      <nav class="drawer-nav">
+        <ul class="drawer-menu">
+          <li><a href="index.html">宮内温泉旅館</a></li>
+          <li><a href="spa.html">温泉</a></li>
+          <li id="selected"><a href="room.html">ご宿泊</a></li>
+          <li><a href="dining.html">料理</a></li>
+          <li><a href="price.html">料金</a></li>
+          <li><a href="access.html">交通アクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="h1center">
+      <h1>　ご宿泊</h1>
+    </div>
+  </header>
+  <main>
+    <section id="room01">
+      <p class="p01">昭和を感じさせる和室。昔懐かしい作りです。<br>初めて来てもどこか懐かしく、癒される空間です。</p>
+      <div class="roomA">
+        <img src="./images/room_img01.jpg" alt="和室の写真">
+        <p>和室６部屋</p>
+      </div>
+      <div class="roomB">
+        <img src="./images/room_img02.jpg" alt="入口の写真">
+        <p>旅館入口</p>
+      </div>
+      <img src="./images/spa_img88.jpg" alt="宮内温泉の写真" class="img100">
+    </section>
+    <section id="room02">
+      <div class="amenities">
+        <img src="./images/room_img03.jpg" alt="アメニティの写真">
+        <h3>アメニティ</h3>
+        <p>シャンプー、リンス、石鹸、浴衣、歯ブラシ、バスタオル、フェイスタオル、ドライヤー貸し出し&#040;受付へお申し出下さい&#041;</p>
+      </div>
+      <div class="water">
+        <img src="./images/room_img04.jpg" alt="昭和の水筒の写真">
+        <h3>当館のお水</h3>
+        <p>当館の蛇口から出るお水とお湯は全て<br>地下水と温泉水でございます。<br>コーヒーや紅茶を淹れると<br>いつもとは違った味わいをお楽しみいただけます。<br>お持ち帰り自由ですので、ぜひご自宅でお試しください。</p>
+      </div>
+    </section>
+    <div id="pageTop"><a href="#"><img src="./images/pagetop.png" alt="トップへ戻るボタン" class="pagetop"></a></div>
+  </main>
+  <div class="sns_btn">
+    <img src="./images/fb_btn.png" alt="facebookボタン" class="fb_btn">
+    <img src="./images/insta_btn.png" alt="instaglamボタン" class="insta_btn">
+  </div>
+  <footer>
+    <div class="footer">
+      <img src="./images/footer_img.png" alt="温泉マーク">
+      <p class="footer_gu">宮内温泉旅館</p>
+      <p class="footer_yu">&#12306;048-0621</p>
+      <p class="footer_add">北海道島牧郡島牧村字泊431</p>
+      <p class="footer_tel">TEL:0136-75-6320</p>
+      <p class="footer_sm"><small>Copyright 2017 宮内温泉旅館</small></p>
+    </div>
+  </footer>
+</body>
+</html>
