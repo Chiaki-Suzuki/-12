@@ -582,6 +582,10 @@ table td{
   color: #da4040;
 }
 
+.pc_off {
+  display: none;
+}
+
 /* 交通アクセス */
 #access_header{
   width: 100%;
