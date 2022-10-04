@@ -38,6 +38,13 @@
                 });
             });
         </script>
+        <script>
+            $(document).ready(function() {
+                if(location.pathname != "/") {
+                    $('nav li a[href^="/' + location.pathname.split("/")[1] + '"] img').addClass('selected');
+                } else $('.nav li a:eq(0) img').addClass('selected');
+            });
+        </script>
     </head>
     <body>
         <noscript>
