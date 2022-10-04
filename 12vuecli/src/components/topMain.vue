@@ -77,4 +77,36 @@ main{
   margin: 5em auto 6em;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* トップページ */
+#index_header{
+  width: 100%;
+  background-image: url(../assets/images/index_header_bg_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#index_header h1{
+  height: 15em;
+}
+
+main{
+  width: 100%;
+}
+
+.index_img01,
+.index_img02{
+  margin: 0 auto;
+  padding: 0;
+}
+
+#index02 img{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+}
 </style>

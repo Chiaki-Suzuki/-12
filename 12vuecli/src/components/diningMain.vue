@@ -126,4 +126,51 @@ export default {
   margin: 0 10% 2em 0;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* 料理 */
+#dining_header{
+  width: 100%;
+  background-image: url(../assets/images/dining_header_bg_sp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dining01{
+  margin-bottom: 2em;
+}
+
+.dining_p{
+  text-align: center;
+  margin: -2em auto 0;
+}
+
+#dining02>p{
+  margin: 0 auto 2em;
+}
+
+.rice{
+  overflow: hidden;
+  zoom: 1;
+  margin: 0 auto 1em;
+}
+
+.rice h3{
+  font-size: 1.15em;
+  margin: 0 auto;
+}
+
+.rice p{
+  font-size: 0.8em;
+  margin: 0 auto 0.5em;
+}
+
+.rice img{
+  display: block;
+  width: 60%;
+  margin: 0 auto 1em;
+}
+}
 </style>

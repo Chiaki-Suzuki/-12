@@ -246,4 +246,77 @@ export default {
   display: none;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* 料金シミュレーション */
+.simulation {
+  margin-bottom: 40px;
+}
+
+.simulation h2 {
+  text-align: center;
+}
+
+.simulation h2::before {
+  content: '';
+  display: block;
+  height: 50px;
+  background: url("../assets/images/simu_title.jpg") 50% 50% / contain no-repeat;
+  margin: 0 auto 10px;
+}
+
+.simu_text {
+  text-align: center;
+}
+
+.simulation table {
+  margin: 20px auto;
+}
+
+.simulation table th {
+  width: 25%;
+}
+
+.simulation table td {
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.simulation table td label {
+  margin: 0 0 0 10px;
+}
+.simulation table td label:nth-of-type(2n-1) {
+  margin: 0;
+}
+
+.simulation input[type="date"],
+.simulation select {
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+.simulation select:first-of-type {
+  margin: 0 0 5px 0;
+}
+
+.simulation .sum_box {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px !important;
+  border-bottom: 1px solid;
+}
+
+.simulation .sum_box span {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 5px 0 10px;
+  color: #da4040;
+}
+}
 </style>

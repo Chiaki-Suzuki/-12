@@ -211,4 +211,75 @@ table td{
   margin: 3em 0;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* 料金 */
+#price_header{
+  width: 100%;
+  background-image: url(../assets/images/price_header_bg_sp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#price01 p,
+#price02 p{
+  font-size: 0.9em;
+}
+
+#price01 img{
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+}
+
+#price02 p{
+  margin-bottom: 2em;
+}
+
+table{
+  border-collapse: collapse;
+  border: 0.5px solid #000000;
+  table-layout: fixed;
+  margin: 1em auto;
+  text-align: center;
+}
+
+#price01 table{
+  width: 95%;
+}
+
+#price02 table{
+  width: 80%;
+}
+
+table th,
+table td{
+  border:0.5px solid #000000;
+  padding: 0.1em 0;
+}
+
+table th{
+  background-color: #808080;
+  color: #FFFFFF;
+}
+
+table td{
+  font-size: 1.2em;
+}
+
+.td_p{
+  font-size: 0.9em;
+}
+
+#price02 img{
+  display: none;
+}
+
+#price03{
+  text-align: center;
+  margin: 3em 0;
+}
+}
 </style>

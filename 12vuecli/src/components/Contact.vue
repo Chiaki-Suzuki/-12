@@ -26,4 +26,13 @@ export default {
   margin-bottom: 4em;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* お問い合わせ */
+.contact_tel{
+  margin-bottom: 3em;
+}
+}
 </style>

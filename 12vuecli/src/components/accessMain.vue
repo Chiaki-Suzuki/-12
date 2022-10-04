@@ -80,4 +80,41 @@ export default {
   margin: 0 auto;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* 交通アクセス */
+#access_header{
+  width: 100%;
+  background-image: url(../assets/images/access_header_bg_sp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#access01,
+#access02{
+  overflow: hidden;
+  zoom: 1;
+  margin: 2em auto;
+}
+
+#access01 p,
+#access02 p{
+  font-size: 1em;
+}
+
+#access01 img,
+#access02 img{
+  display: block;
+  width: 60%;
+  margin: 1em auto 0;
+}
+
+#g_map{
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+}
+}
 </style>

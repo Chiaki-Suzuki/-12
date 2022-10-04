@@ -94,8 +94,34 @@ nav img{
   width: 100%;
 }
 
-#selected{
+.selected{
   border-bottom: solid 2px rgba(255,255,255,0.6);
+}
+}
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* ナビ */
+.drawer-nav{
+	max-width:820px;
+	margin:0 auto;
+	font-size:1.5em;
+}
+
+.drawer-nav ul li{
+	margin:1.5em auto;
+  text-align: center;
+}
+
+.drawer-nav a{
+	color:#ffffff;
+	text-decoration:none;
+	position:relative;
+}
+
+#selected{
+  border-bottom: solid 2px #ffffff;
 }
 }
 </style>

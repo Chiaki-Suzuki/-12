@@ -128,4 +128,63 @@ export default {
   float: right;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* 温泉 */
+#spa_header{
+  width: 100%;
+  background-image: url(../assets/images/spa_header_bg_sp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#spa02,
+#spa03{
+  overflow: hidden;
+  zoom: 1;
+}
+
+.spa_img01{
+  display: none;
+}
+
+#spa02 dl{
+  overflow: hidden;
+  zoom: 1;
+}
+
+#spa02 dl{
+  font-size: 1em;
+  width: 90%;
+  margin: auto;
+}
+
+#spa02 dt{
+  float: left;
+}
+
+#spa02 p{
+  margin: 1em auto;
+}
+
+.spa_img02{
+  margin: 1.5em auto 0;
+  padding: 0;
+}
+
+#spa03{
+  margin: 0 auto 3em;
+}
+#spa03 h3{
+  margin: 0 auto 0.5em;
+}
+
+.spa03_txt img{
+  display: block;
+  width: 90%;
+  margin: 0 auto 0.5em;
+}
+}
 </style>

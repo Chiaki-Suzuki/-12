@@ -95,4 +95,75 @@ footer{
   margin: 20px auto 0;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* SNSボタン */
+.sns_btn{
+  position: relative;
+}
+
+.fb_btn{
+  position: absolute;
+  width: 9%;
+  top: 1em;
+  left: 1em;
+}
+
+.insta_btn{
+  position: absolute;
+  width: 9%;
+  top: 1em;
+  left: 3.5em;
+}
+
+/* フッター */
+footer{
+  overflow: hidden;
+  zoom: 1;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  background-image: url(../assets/images/footer_bg.jpg);
+}
+
+.footer{
+  width: 45%;
+  margin: auto;
+}
+
+.footer img{
+  display: inline-block;
+  width: 15%;
+  margin: 0.2em 0 0 1em;
+  float: left;
+  opacity: 0.4;
+}
+
+.footer_gu{
+  font-size: 1.2em;
+  margin: 1em auto 0.3em;
+}
+
+.footer_yu{
+  font-size: 0.5em;
+  margin:0 auto;
+}
+
+.footer_add{
+  font-size: 0.7em;
+  margin:0 auto;
+}
+
+.footer_tel{
+  font-size: 1em;
+  margin:0 auto 0.5em;
+}
+
+.footer_sm{
+  font-size: 0.8em;
+  margin: 0 auto;
+}
+}
 </style>

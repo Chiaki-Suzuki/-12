@@ -96,4 +96,57 @@ export default {
   text-align: center;
 }
 }
+/*-------------------------
+  sp
+-------------------------*/
+@media screen and (max-width:767px){
+/* ご宿泊 */
+#room_header{
+  width: 100%;
+  background-image: url(../assets/images/room_header_bg_sp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#room01{
+  overflow: hidden;
+  zoom: 1;
+  margin: 0 auto 1em;
+}
+
+#room01 img{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.roomA p,
+.roomB p{
+  margin: 0 auto 2em;
+  text-align: center;
+}
+
+#room01>img{
+  display: none;
+}
+
+#room02{
+  margin: 0 auto;
+}
+
+#room02 img{
+  display: block;
+  width: 40%;
+  margin: 0 auto 0.5em;
+}
+
+#room02 h3{
+  text-align: center;
+}
+
+.amenities,
+.water{
+  margin-bottom: 3em;
+}
+}
 </style>
